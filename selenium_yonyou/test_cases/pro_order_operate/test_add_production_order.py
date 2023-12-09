@@ -16,7 +16,7 @@ class TestLogin:
         self.login.open_browser(browser)
         self.login.get_url(my_url)
 
-    @pytest.mark.parametrize("data", [("yycyh95@test1988.com", "DGYLznzz230802!")])
+    @pytest.mark.parametrize("data", [("", "")])
     def test_login_right(self, data):
         self.login.login_common(*data)
         self.login.goto_main().goto_production_order_list().production_order_query().add_production_order()
