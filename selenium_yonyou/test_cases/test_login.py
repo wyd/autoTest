@@ -15,7 +15,7 @@ class TestLogin:
         self.base.get_url(my_url)
         self.login = Login(self.base.driver)
 
-    @pytest.mark.parametrize("data", [("yycyh95@test1988.com", "DGYLznzz230802!")])
+    @pytest.mark.parametrize("data", [("yycyh95@aqqqqqqq.com", "啊哈哈!")])
     def test_login_right(self, data):
         # login = Login(self.base.driver)
         self.result = self.login.goto_main(*data).login_assertion()
