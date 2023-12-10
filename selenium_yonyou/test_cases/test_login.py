@@ -23,6 +23,7 @@ class TestLogin:
         assert self.result == True
 
     # @pytest.mark.parametrize("data", [("test", "test")])
+    # @pytest.mark.parametrize("data", [(".com", "!")])
     # def test_login_error(self, data):
     #     self.login.login_common(*data)
     #     self.result = self.login.goto_main().login_assertion()

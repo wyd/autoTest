@@ -21,6 +21,7 @@ class TestLogin:
 
     # 打开节点
     @pytest.mark.parametrize("data", [("test")])
+    @pytest.mark.parametrize("data", [(".com", "!")])
     def test_open_node(self, data):
         # self.login = Login()
         # self.login.open_browser(TestLogin.browser)
