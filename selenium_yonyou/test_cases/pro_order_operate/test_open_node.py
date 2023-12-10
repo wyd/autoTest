@@ -20,7 +20,7 @@ class TestLogin:
     # browser = 'chrome'
 
     # 打开节点
-    @pytest.mark.parametrize("data", [("yycyh95@test1988.com", "DGYLznzz230802!")])
+    @pytest.mark.parametrize("data", [(".com", "!")])
     def test_open_node(self, data):
         # self.login = Login()
         # self.login.open_browser(TestLogin.browser)
