@@ -1,3 +1,4 @@
+
 import pytest
 import yaml
 from selenium import webdriver
@@ -21,7 +22,7 @@ class TestLogin:
         self.result = self.login.goto_main().login_assertion()
         assert self.result == True
 
-    # @pytest.mark.parametrize("data", [("yycyh96@test1988.com", "DGYLznzz230802!")])
+    # @pytest.mark.parametrize("data", [("test", "test")])
     # def test_login_error(self, data):
     #     self.login.login_common(*data)
     #     self.result = self.login.goto_main().login_assertion()
@@ -29,3 +30,4 @@ class TestLogin:
 
     def teardown(self):
         self.login.close_driver()
+
